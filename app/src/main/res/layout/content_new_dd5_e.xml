@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.josheasop.characterkeeper.NewDD5E"
+    tools:showIn="@layout/activity_new_dd5_e">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/proficiency"
+            android:layout_width="115dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView26"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/hitDice"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/proficiency"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/proficiency"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/hp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView27"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/hp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/hitDice"
+            app:layout_constraintLeft_toRightOf="@+id/hitDice"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/hitDice"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/hitDice"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/attributes"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/proficiency" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/race"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charRace"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/TitleDesc"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charClass"
+            android:layout_width="153dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/charName"
+            tools:layout_editor_absoluteY="55dp"
+            tools:ignore="LabelFor,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/Class"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charClass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/level"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charLevel"
+            app:layout_constraintLeft_toRightOf="@+id/charClass"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charLevel"
+            android:layout_width="112dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charName"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/charRace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charClass"
+            app:layout_constraintHorizontal_bias="0.0"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/charAlignment"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/charRace"
+            tools:ignore="LabelFor,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/alignment"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charAlignment"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/saves"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/dex"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charDex"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/str"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charStr"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/strSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@android:color/black"
+            android:textColor="@android:color/black"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charStr"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded,UnusedAttribute" />
+
+        <EditText
+            android:id="@+id/charStr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView10"
+            app:layout_constraintRight_toLeftOf="@+id/strSave"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="LabelFor,RtlHardcoded"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <EditText
+            android:id="@+id/charDex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView9"
+            app:layout_constraintRight_toLeftOf="@+id/dexSave"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/charStr"
+            app:layout_constraintHorizontal_bias="0.0"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/dexSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/black"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charDex"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charCon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/textView11"
+            app:layout_constraintRight_toLeftOf="@+id/conSave"
+            app:layout_constraintTop_toBottomOf="@+id/charDex"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/conSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charCon"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/con"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charCon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charInt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView12"
+            app:layout_constraintRight_toLeftOf="@+id/intSave"
+            app:layout_constraintTop_toBottomOf="@+id/charCon"
+            app:layout_constraintHorizontal_bias="0.0"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/inte"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charInt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/intSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/holo_blue_light"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charInt"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charWis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView13"
+            app:layout_constraintRight_toLeftOf="@+id/wisSave"
+            app:layout_constraintTop_toBottomOf="@+id/charInt"
+            app:layout_constraintHorizontal_bias="0.0"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/wisSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charWis"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/wis"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charWis"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charChar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView14"
+            app:layout_constraintRight_toLeftOf="@+id/charSave"
+            app:layout_constraintTop_toBottomOf="@+id/charWis"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/charSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/black"
+            app:buttonTint="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charChar"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingPrefix,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/cha"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charChar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/skills"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charChar" />
+
+        <CheckBox
+            android:id="@+id/Acrobatics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-1dp"
+            android:text="@string/acrobatics"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/AnimalHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/animalHandling"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Acrobatics"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Arcana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/arcana"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Acrobatics"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Athletics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/athletics"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Arcana"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/AnimalHandling" />
+
+        <CheckBox
+            android:id="@+id/Deception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/deception"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Arcana"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/History"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/history"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Deception"
+            app:layout_constraintLeft_toLeftOf="@+id/Athletics"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/SleightofHand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/sleightofHand"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Religion"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/Persuasion" />
+
+        <CheckBox
+            android:id="@+id/Insight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/insight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Deception"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Intimidation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/intimidation"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Insight"
+            app:layout_constraintLeft_toLeftOf="@+id/History"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Investigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/investigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Insight"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Medicine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/medicine"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Investigation"
+            app:layout_constraintLeft_toLeftOf="@+id/Intimidation"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/nature"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Investigation"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Perception"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/perception"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Nature"
+            app:layout_constraintLeft_toLeftOf="@+id/Medicine"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/performance"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nature"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Persuasion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/persuasion"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Performance"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/Perception" />
+
+        <CheckBox
+            android:id="@+id/Religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/religion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Performance"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Stealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/stealth"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Religion"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Survival"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/survival"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Stealth"
+            app:layout_constraintLeft_toLeftOf="@+id/SleightofHand"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="8dp"
+            android:onClick="next"
+            android:text="@string/next"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Stealth"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/TitleDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/basicInfo"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/hitDice"
+            android:layout_width="149dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/charAlignment"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/speed"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/proficiency"
+            app:layout_constraintLeft_toRightOf="@+id/proficiency"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView28"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/textView28"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:onClick="back"
+            android:text="@string/Back"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/charExp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView29"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/textView29"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/exp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charAlignment"
+            app:layout_constraintLeft_toRightOf="@+id/charAlignment"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

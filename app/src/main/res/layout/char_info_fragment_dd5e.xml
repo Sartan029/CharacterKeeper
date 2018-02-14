@@ -1,0 +1,445 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.josheasop.characterkeeper.dd5e_char_info_fragment">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/conLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/charClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/classPrint"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charName" />
+
+        <TextView
+            android:id="@+id/charLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/levelPrint"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charClass"
+            app:layout_constraintLeft_toRightOf="@+id/charClass" />
+
+        <TextView
+            android:id="@+id/charRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/racePrint"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charClass" />
+
+        <TextView
+            android:id="@+id/charAlignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/alignmentPrint"
+            android:textColor="@color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charRace"
+            app:layout_constraintLeft_toRightOf="@+id/charRace" />
+
+        <TextView
+            android:id="@+id/charExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expPrint"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/charRace" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/attributes"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charExp" />
+
+        <TextView
+            android:id="@+id/charStr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/strPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/strMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charStr"
+            app:layout_constraintLeft_toRightOf="@+id/charStr" />
+
+        <TextView
+            android:id="@+id/charDex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/dexPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charStr" />
+
+        <TextView
+            android:id="@+id/dexMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toRightOf="@+id/charDex"
+            app:layout_constraintTop_toBottomOf="@+id/strMod" />
+
+        <TextView
+            android:id="@+id/charCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/conPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charDex" />
+
+        <TextView
+            android:id="@+id/conMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charCon"
+            app:layout_constraintLeft_toRightOf="@+id/charCon" />
+
+        <TextView
+            android:id="@+id/charInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/intePrint"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charCon" />
+
+        <TextView
+            android:id="@+id/intMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charInt"
+            app:layout_constraintLeft_toRightOf="@+id/charInt" />
+
+        <TextView
+            android:id="@+id/charWis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/wisPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charInt" />
+
+        <TextView
+            android:id="@+id/wisMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charWis"
+            app:layout_constraintLeft_toRightOf="@+id/charWis" />
+
+        <TextView
+            android:id="@+id/charCha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/chaPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charWis" />
+
+        <TextView
+            android:id="@+id/charMod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/modPrint"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charCha"
+            app:layout_constraintLeft_toRightOf="@+id/charCha" />
+
+        <EditText
+            android:id="@+id/exp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:inputType="textPersonName|number"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/charExp"
+            app:layout_constraintLeft_toRightOf="@+id/charExp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/skills"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charMod" />
+
+        <CheckBox
+            android:id="@+id/Acrobatics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/acrobatics"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <CheckBox
+            android:id="@+id/AnimalHandling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/animalHandling"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Acrobatics"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Arcana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/arcana"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Acrobatics"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Athletics"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/athletics"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Arcana"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/AnimalHandling" />
+
+        <CheckBox
+            android:id="@+id/Deception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/deception"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Arcana"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/History"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/history"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Deception"
+            app:layout_constraintLeft_toLeftOf="@+id/Athletics"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/SleightofHand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/sleightofHand"
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Religion"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/Persuasion" />
+
+        <CheckBox
+            android:id="@+id/Insight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/insight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Deception"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Intimidation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/intimidation"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Insight"
+            app:layout_constraintLeft_toLeftOf="@+id/History"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Investigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/investigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Insight"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Medicine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/medicine"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Investigation"
+            app:layout_constraintLeft_toLeftOf="@+id/Intimidation"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/nature"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Investigation"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Perception"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/perception"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Nature"
+            app:layout_constraintLeft_toLeftOf="@+id/Medicine"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/performance"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Nature"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Persuasion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/persuasion"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Performance"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="@+id/Perception" />
+
+        <CheckBox
+            android:id="@+id/Religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/religion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Performance"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Stealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/stealth"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Religion"
+            tools:ignore="RtlHardcoded" />
+
+        <CheckBox
+            android:id="@+id/Survival"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/survival"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Stealth"
+            app:layout_constraintLeft_toLeftOf="@+id/SleightofHand"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="RtlHardcoded" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
